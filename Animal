@@ -1,0 +1,17 @@
+public class Animal {
+
+    String name;
+
+    Animal(String name) { this.name = name; }
+
+    void checkRun (int distanceRun)
+    {
+        System.out.println(); // чтобы не обявлять абстракт
+    }
+
+    void checkSwim (int distanceSwim)
+    {
+        System.out.println(); // чтобы не обявлять абстракт
+    }
+
+}

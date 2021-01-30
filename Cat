@@ -1,0 +1,29 @@
+public class Cat extends Animal {
+
+    protected int run;
+    protected int swim;
+
+    public Cat (String name, int run, int swim) { //конструктор для кота
+        super(name);
+        this.run = run;
+        this.swim = swim;
+    }
+    @Override // переписываю метод для кота
+    public void checkRun(int distanceRun){
+        if (this.run > distanceRun) {
+            System.out.println(name+" может пробежать "+distanceRun+"м");}
+        else System.out.println(name+" не может пробежать больше "+run+"м");
+    }
+
+    public void checkSwim(int distanceSwim){ //переписываю метод для кота
+        if (swim<=0) {
+            System.out.println(name + " не умеет плавать");
+        }
+        else { //оставляю ветку, вдруг кота придется научить плавать
+            if (this.swim > distanceSwim) {
+                System.out.println(name + " может проплыть " + distanceSwim + "м");
+            } else System.out.println(name + " не может проплыть больше " + swim + "м");
+        }
+    }
+
+}

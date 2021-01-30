@@ -1,0 +1,26 @@
+public class Dog extends Animal {
+
+    protected int run;
+    protected int swim;
+
+    public Dog (String name, int run, int swim) {
+        super(name);
+        this.run = run;
+        this.swim = swim;
+         }
+//    final int run = 500;
+//    final int swim = 10;
+
+    @Override
+    public void checkRun(int distanceRun){
+        if (this.run > distanceRun) {
+            System.out.println(name+" может пробежать "+distanceRun+"м");}
+        else System.out.println(name+" не может пробежать больше "+run+"м");
+    }
+
+    public void checkSwim(int distanceSwim){
+        if (this.swim > distanceSwim) {
+            System.out.println(name+" может проплыть "+distanceSwim+"м");}
+        else System.out.println(name+" не может проплыть больше "+swim+"м");
+    }
+}

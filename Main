@@ -1,16 +1,16 @@
 public class Main {
   public static void main(String[] args)
   {
-    Cat cat1 = new Cat("Васька",200, 0);
-    Dog dog1 = new Dog("Бобик", 500, 10);
-    Animal[] animals = {cat1, dog1};
-
+      AnimalFerm ferm = new AnimalFerm();
+    Cat cat1 = ferm.createCat(200);
+    Dog dog1 = ferm.createDog(500, 10);
 
     cat1.checkRun(50);
     dog1.checkRun(450);
+    dog1.checkRun(550);
     cat1.checkSwim(1);
     dog1.checkSwim(2);
-    System.out.println("Количество животных - "+animals.length);
+    System.out.println("Количество животных - "+(ferm.dogReturn()+ ferm.catReturn()));
   }
 
 }

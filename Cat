@@ -8,7 +8,7 @@ public class Cat extends Animal {
         this.run = run;
         this.swim = swim;
     }
-    @Override // переписываю метод для кота
+
     public void checkRun(int distanceRun){
         if (this.run > distanceRun) {
             System.out.println(name+" может пробежать "+distanceRun+"м");}

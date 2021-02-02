@@ -1,0 +1,21 @@
+public class AnimalFerm {
+int catNumber=0;
+int dogNumber=0;
+
+    Cat createCat(int maxRun)
+    {
+        catNumber++;
+        return new Cat("", maxRun, 0);
+    }
+
+    Dog createDog(int maxRun, int maxSwim)
+    {
+        dogNumber++;
+        return new Dog("", maxRun, maxSwim);
+    }
+
+    public int catReturn () { return catNumber; }
+
+    public int dogReturn () {return dogNumber; }
+
+}

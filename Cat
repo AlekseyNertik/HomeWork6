@@ -15,15 +15,11 @@ public class Cat extends Animal {
         else System.out.println(name+" не может пробежать больше "+run+"м");
     }
 
-    public void checkSwim(int distanceSwim){ //переписываю метод для кота
+    public void checkSwim(int distanceSwim){ 
         if (swim<=0) {
             System.out.println(name + " не умеет плавать");
         }
-        else { //оставляю ветку, вдруг кота придется научить плавать
-            if (this.swim > distanceSwim) {
-                System.out.println(name + " может проплыть " + distanceSwim + "м");
-            } else System.out.println(name + " не может проплыть больше " + swim + "м");
-        }
+        
     }
 
 }

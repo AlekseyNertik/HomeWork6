@@ -11,7 +11,6 @@ public class Dog extends Animal {
 //    final int run = 500;
 //    final int swim = 10;
 
-    @Override
     public void checkRun(int distanceRun){
         if (this.run > distanceRun) {
             System.out.println(name+" может пробежать "+distanceRun+"м");}
